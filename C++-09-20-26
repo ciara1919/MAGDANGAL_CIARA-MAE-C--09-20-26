@@ -1,1 +1,98 @@
-# MAGDANGAL_CIARA-MAE-C--09-20-26
+//C++ LANGUAGE 
+
+// c++ syntax
+
+#include <iostream> // give ua access to std::cout, std::cin
+
+int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+
+
+// Variables, Types, and I/O 
+#include <ioststream>
+#include <string>
+using namespace std;
+
+int main() {
+    // ----- Declaring variables of different types -----
+    int afe = 20;                   // whole numbers
+    double price = 19.99;           // decimal numbers (double precision)
+    float weight = 65.5f;           // decimal numbers (single precision, note thw 'f')
+    char grade = 'A';               // a  single character (single quotes)
+    bool isStudent = true;          // true or false 
+    string name = "Maria";          // text (needs <string> header)
+
+    // ----- Output using cout -----
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Price: " << price << endl;
+    cout << "Weight: " << weight << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Is student? " << isStudent << end; // prints 1 for true, 0 for false
+
+    // ----- Getting input using cin -----
+    string userCity;
+    cout << "\nEnter your city: ";
+    cin >> userCity; // reads one word (stops  at whitespace)
+    cout << "You live in: " << userCity << endl;
+
+    // ----- Reading a full line (including spaces) -----
+    cin.Ignore(); // clears leftover realine character from previews cin string fullSentence;
+    cout << "Enter a sentence about yourself: "
+    getline(cin, fullSentence);// reads the entire lineout << "You said: " << fullSentence << endl;
+
+    return 0;
+}
+
+// Operator and Expression
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10, b, = 3;
+
+    // ----- Arithmetic operators -----
+    cout << "a + b = " << (a + b) << endl;    // addition
+    cout << "a - b = " << (a + b) << endl;    // subtraction
+    cout << "a * b = " << (a + b) << endl;    // multiplication
+    cout << "a / b = " << (a + b) << endl;    // integer division -> 3 (drops decimal)
+    cout << "a & b = " << (a + b) << endl;    // modulus -> remainder = 1
+
+    double x = 10, y = 3;
+    cout << "x / y =  " << (x / y) << endl;   // 3.33333 -> floating point division
+
+    // ----- Relational operatred (return bool: 1 or 0) -----
+    cout << "\na == b: " << (a == b) << endl;
+    cout << "a != b: " << (a != b) << endl;    
+    cout << "a > b = " << (a > b) << endl;    
+    cout << "a < b = " << (a < b) << endl;    
+    
+    // ----- Logical operators -----
+    bool p = true, q = false;
+    cout << "\np && q = " << (p && q) << endl;  // AND -> false
+    cout << "p || q: " << (p || q) << endl;  // OR -> true
+    cout << "!p: = "   << (!p)     << endl;  // NOT -> false
+
+    // ----- Assignment operators -----
+    int score = 50;
+    score += 10;   // same as score = score + 10
+    cout << "\nscore after += 10: " << score << endl;
+    score *= 2;    // same as score =  score * 2
+    cout << "score after *= 2: " << score << endl;
+
+    // ----- Increment / decrement -----
+    int counter  =  5;
+    cout << "\ncounter++ (post): " << counter++ << endl; // prints 5, THEN increments
+    cout << "counter now: " << counter << endl;          // now 6  
+    cout << "++counter (pre): " << ++counter << endl;    // increments  THEN prints -> 7
+
+    return 0;
+
+
+
+
+
+
+
